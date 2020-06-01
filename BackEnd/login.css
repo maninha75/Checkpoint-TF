@@ -1,0 +1,117 @@
+*{margin:0; padding:0;}
+
+body{
+    background-size: cover;
+background-image: imagem("RODAS.jpg");
+background-attachment:"fixed";
+background-repeat: no-repeat;
+font-size: 100%;
+font-family: verdana;
+}
+
+a{text-decoration: none; color: #ccc}
+a:hover{color: #999;}
+
+li{list-style-type: none;}
+
+.logo{
+color: #fff;
+font-size: 21px;
+}
+
+header{
+padding-left: 3rem;
+padding-right: 3rem;
+display: flex;
+background-color: #020629;
+justify-content:space-between;
+align-items:center;
+}
+
+header nav{
+display: flex;
+line-height: 40px;
+}
+
+header nav li a{
+padding: 11px 20px;
+transition:.8s;
+}
+header nav li a:hover{
+background-color: #fff;
+color: #111;
+transition:.8s;
+}
+
+/*MENU RESPONSIVO*/
+
+@media(max-width:850px){
+
+header{
+flex-direction: column;
+padding-top: 4px;
+}
+
+.logo{margin-bottom:10px;}
+
+}
+
+@media(max-width:700px){
+header{
+padding-right: 0;
+padding-left: 0;
+}
+
+nav{
+flex-direction:row;
+padding-top: 4px;
+width: 100%;
+text-align: center;
+}
+
+.logo{margin-bottom:10px;}
+header nav li{width: 100%;}
+
+}
+
+@media(max-width:500px){
+header{
+padding-right: 0;
+padding-left: 0;
+}
+nav{
+
+flex-direction:column;
+padding-top: 4px;
+width: 100%;
+text-align: center;
+}
+
+.logo{margin-bottom:10px;}
+header nav li{width: 100%;}
+
+header nav li:hover{background-color: #fff; color: #000;}
+header nav li a{color: #fff;}
+header nav li a:hover{background-color:transparent; color: #000}
+
+}
+
+#nossa-empresa{
+    padding: 15px;
+    background-color: #201e1f;
+    text-align: center;
+    height: 290px;
+    color: #fff;
+    padding-top: 50px;
+    
+}
+#nossa-empresa h2{
+    margin-bottom: 20px;
+}
+#nossa-empresa p{
+    max-width: 650px;
+    line-height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
